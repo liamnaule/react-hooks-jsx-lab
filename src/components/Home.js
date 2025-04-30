@@ -1,9 +1,13 @@
-import React from "react";
-import { name, city } from "../data/data.js";
+import { image } from "../data/user";
 
-function Home() {
-  // update the JSX being returned!
-  return <div>Home</div>;
+function About() {
+  return (
+    <div id="about">
+      <h2>About Me</h2>
+      <p>I'm passionate about building awesome web applications!</p>
+      <img src={image} alt="I made this" />
+    </div>
+  );
 }
 
-export default Home;
+export default About;
